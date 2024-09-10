@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+</head>
+<body>
+    <h2>Validation Form</h2>
+    <script>
+        function validateForm(){
+            var x=documnet.forms["myForm"]["fname"].value;
+            if (x == ""){
+                alert("name must be filled out");
+                return false;
+            }
+        }
+    </script>
+<body>
+    <form name="myForm" onsubmit="validateForm()">
+Name:<input type="text" name="fname"><br><br>
+Date of birth:<input type="text" name="fname"><br><br>
+Name:<input type="text" name="fname"><br><br>
+Email:<input type="text" Email="femail"><br><br>
+<input type="submit" value="submit">
+<p id="message"></p>
+    </form>
+</body>
+</html>
